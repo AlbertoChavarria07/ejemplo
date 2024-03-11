@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title>Tienda El Chamo</title>
+</head>
+<body>
+    <style>
+        img{
+            width: 200px;
+            height: auto;
+        }
+            table, th,td{
+                border: 1px dotted  rgb(0, 0, 0);
+            }
+            table{
+                width: 80%;
+                margin-top: 20px;
+                border-collapse: collapse;
+                box-shadow: 0 5px 15px rgb(0, 0, 0);
+                margin-left: 50px;
+            }
+            th,tr{
+                text-align: left;
+                padding: 8px;
+            }
+            tr:nth-child(even){
+                background-color: rgba(28, 89, 202, 0.774);
+            }
+            tr:hover{
+                background-color: rgb(35, 135, 230);
+            }
+    </style>
+   <div style="margin: 24px;">
+    <nav class="navbar navbar-light"
+    style="background-color:rgb(0, 0, 0)">
+    <div class="container">
+        <a class="navbar-brand" href="index.html" style="color: rgb(204, 204, 204);                                                                    font-family: 'La unica', sans-serif;
+        "
+        >Inicio</a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="nav navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" 
+                data-toggle="dropdown"
+                aria-haspoup="true"
+                aria-expanded="false">Unidad 1</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" 
+                     href="perfil.html">Perfil</a><br>
+                    <a class="dropdown-item" 
+                     href="calculadora.html">Calculadora</a><br>
+                    <a class="dropdown-item" 
+                     href="tienda.html">Tienda parte 1</a><br>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" 
+                data-toggle="dropdown"
+                aria-haspoup="true"
+                aria-expanded="false">Unidad 2</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" 
+                     href="tiendapedido.html">Tienda Pedido</a><br>
+                    <a class="dropdown-item" 
+                     href="json.html">json</a><br>
+                    <a class="dropdown-item" 
+                     href="tiendapedido2.html">Tienda Pedido 2</a><br>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" 
+                data-toggle="dropdown"
+                aria-haspoup="true"
+                aria-expanded="false">Unidad 3</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" 
+                     href="basededatos.html">Base de datos</a><br>
+                    <a class="dropdown-item" 
+                     href="Peliculas.html">Peliculas</a><br>    
+                </div>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<h1>Desayunos</h1>
+                <table>
+            <tr>
+                <th>Imagen</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td><img src="img/13.jpg" alt="Desayuno"></td>
+                <td><p>Huevito con Tomate y Cafe</p></td>
+                <td>$85.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/14.jpg" alt="Desayuno"></td>
+                <td><p>Huevo Con Pan En Forma De Corazon</p></td>
+                <td>$85.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/15.jpg" alt="Desayuno"></td>
+                <td><p>2 Croassant con Jugo y Cafe</p></td>
+                <td>$85.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/16.jpg" alt="Desayuno"></td>
+                <td><p>Pan Con Mermelada</p></td>
+                <td>$75.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/17.jpg" alt="Desayuno"></td>
+                <td><p>1 Croassant Con Caffe</p></td>
+                <td>$65.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/18.jpg" alt="Desayuno"></td>
+                <td><p>Huevito con Tomate y Cafe</p></td>
+                <td>$85.00</td>
+            </tr>
+             </table>
+  <h1>Almuerzo</h1>
+        <table>
+    <tr>
+        <th>Imagen</th>
+        <th>Descripcion</th>
+        <th>Precio</th>
+    </tr>
+    <tr>
+        <td><img src="img/24.jpg" alt="Almuerzo"></td>
+        <td><p>Tiffin Acompañado De Salsa Y Tortillas De Harina</p></td>
+        <td>$95.00</td>
+    </tr>
+    <tr>
+        <td><img src="img/23.jpg" alt="Almuerzo"></td>
+        <td><p>Pechuga De Pollo Con Arroz</p></td>
+        <td>$85.00</td>
+    </tr>
+    <tr>
+        <td><img src="img/22.jpg" alt="Almuerzo"></td>
+        <td><p>Ensalada De Frutas Con Arroz Y Pollo</p></td>
+        <td>$85.00</td>
+    </tr>
+    <tr>
+        <td><img src="img/21.jpg" alt="Almuerzo"></td>
+        <td><p>Huevo Con Carne Y Arroz</p></td>
+        <td>$75.00</td>
+    </tr>
+    <tr>
+        <td><img src="img/20.jpg" alt="Almuerzo"></td>
+        <td><p>El Corrientazo</p></td>
+        <td>$125.00</td>
+    </tr>
+    <tr>
+        <td><img src="img/19.jpg" alt="Almuerzo"></td>
+        <td><p>Huevito con Tomate y Cafe</p></td>
+        <td>$85.00</td>
+    </tr>
+    </table>
+<h1>Cenas</h1>
+        <table>
+    <tr>
+        <th>Imagen</th>
+        <th>Descripcion</th>
+        <th>Precio</th>
+    </tr>
+    <tr>
+        <td><img src="img/6.jpg" alt="Cena"></td>
+        <td><p>Mini Pizzas</p></td>
+        <td>$95.00</td>
+    </tr>
+    <tr>
+        <td><img src="img/5.jpg" alt="Cena"></td>
+        <td><p>pollo teriyaki con verduras al vapor</p></td>
+        <td>$85.00</td>
+    </tr>
+    <tr>
+        <td><img src="img/4.jpg" alt="Cena"></td>
+        <td><p>Sandwich De Tomate Y Queso</p></td>
+        <td>$85.00</td>
+    </tr>
+    <tr>
+        <td><img src="img/3.jpg" alt="Cena"></td>
+        <td><p>Sandwich De verdurass</p></td>
+        <td>$75.00</td>
+    </tr>
+    <tr>
+        <td><img src="img/2.jpg" alt="Cena"></td>
+        <td><p</p>Tostadas De Frijol Y Aguacate</td>
+        <td>$125.00</td>
+    </tr>
+    <tr>
+        <td><img src="img/1.jpg" alt="Cena"></td>
+        <td><p>Tacos De Chicharron</p></td>
+        <td>$85.00</td>
+    </tr>
+    </table>
+    <h1>Postres</h1>
+                <table>
+            <tr>
+                <th>Imagen</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td><img src="img/12.jpg" alt="Postres"></td>
+                <td><p>Pan Chico</p></td>
+                <td>$65.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/11.jpg" alt="Postres"></td>
+                <td><p>ChocoFlan</p></td>
+                <td>$85.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/10.jpg" alt="Postres"></td>
+                <td><p>Pay De Queso</p></td>
+                <td>$85.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/9.jpg" alt="Postres"></td>
+                <td><p>Pastel De Galletas</p></td>
+                <td>$75.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/8.jpg" alt="Postres"></td>
+                <td><p>Flan Con Fresa</p></td>
+                <td>$65.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/7.jpg" alt="Postres"></td>
+                <td><p>Pan Con Fresa</p></td>
+                <td>$85.00</td>
+            </tr>
+            </table>
+ <h1>Bebidas</h1>
+            <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><img src="img/30.jpg" alt="Bebidas"></td>
+            <td><p>Agua Ciel</p></td>
+            <td>$15.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/29.jpg" alt="Bebidas"></td>
+            <td><p>Bebidas Energizantes</td>
+                <td>$22.50</td>
+        </tr>
+        <tr>
+            <td><img src="img/28.jpg" alt="Bebidas"></td>
+            <td><p>Bebida New Mix</p></td>
+            <td>$90.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/27.jpg" alt="Bebidas"></td>
+            <td><p>Bebida Tropical</p></td>
+            <td>$55.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/26.jpg" alt="Bebidas"></td>
+            <td><p>Bebida PRIME</p></td>
+            <td>$15.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/25.jpg" alt="Bebidas"></td>
+            <td><p>Power Ade Azul/Rojo</p></td>
+            <td>$25.00</td>
+        </tr>
+        </table>
+</body>
+</html>
