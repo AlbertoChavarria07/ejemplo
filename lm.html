@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title>Pacman</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .body,html{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .contenido {
+            position: relative;
+            height: 100vh; 
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+        }
+        .contenido2{
+            position: relative;
+            width: 500px;
+            height: 500px;
+        }
+
+        .contenido .texto-presentacion {
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            color: rgb(0, 0, 0);
+            text-shadow: 1px 1px 2px rgb(0, 0, 0);
+            margin-bottom: 20px; 
+        }
+        .contenido .pacman {
+            margin: 80px;
+            width: 100px;
+            left: 100px;
+            top: 50px;
+            transform: translate(-80%, -80%);
+            border-top: 100px solid #ff0;
+            border-left: 100px solid #ff0;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid #ff0;
+            border-radius: 50%;
+            position: relative;
+        }
+        .img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url('img/fondo.jpg') no-repeat center center/cover;
+           
+        }
+        .bolitas {
+            position: absolute;
+            width: 15px;
+            height: 23px;
+            background-color: black;
+            border-radius: 50%;
+            top: 200%;
+            right: -200px;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin: 24px;">
+        <nav class="navbar navbar-light"
+        style="background-color:rgb(0, 0, 0)">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color: rgb(204, 204, 204);                                                                    font-family: 'La unica', sans-serif;
+            "
+            >Inicio</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="nav navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" 
+                    data-toggle="dropdown"
+                    aria-haspoup="true"
+                    aria-expanded="false">Unidad 1</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" 
+                         href="perfil.html">Perfil</a><br>
+                        <a class="dropdown-item" 
+                         href="calculadora.html">Calculadora</a><br>
+                        <a class="dropdown-item" 
+                         href="tienda.html">Tienda parte 1</a><br>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" 
+                    data-toggle="dropdown"
+                    aria-haspoup="true"
+                    aria-expanded="false">Unidad 2</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" 
+                         href="tiendapedido.html">Tienda Pedido</a><br>
+                        <a class="dropdown-item" 
+                         href="json.html">json</a><br>
+                        <a class="dropdown-item" 
+                         href="tiendapedido2.html">Tienda Pedido 2</a><br>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" 
+                    data-toggle="dropdown"
+                    aria-haspoup="true"
+                    aria-expanded="false">Unidad 3</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" 
+                         href="basededatos.html">Base de datos</a><br>
+                        <a class="dropdown-item" 
+                         href="Peliculas.html">Peliculas</a><br>    
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+</div>
+<body>
+   <div class="contenido">
+        <div class="texto-presentacion">
+            <h1>Mi primer dibujo en CSS</h1>
+            <h2>Diseño por: Alberto Chavarria</h2>
+            <p>De la especialidad de programación de 4º semestre de la escuela Cetis 131</p>
+        </div>
+        <div class="pacman">
+            <div class="img"></div>
+            <div class="bolitas"></div>
+            <div class="bolitas" style="top: 150%; right: -50px;"></div>
+            <div class="bolitas" style="top: 250%; right: -50px;"></div>
+            <div class="bolitas" style="top: 200%; right: -150px;"></div>
+            <div class="bolitas" style="top: 220%; right: -100px;"></div> 
+            <div class="cuadrado" style="width: 200px; height: 200px; background-color: blueviolet; border-radius: 10%; border-style: ridge;"></div>
+           <a href="menu2.html"></a> <img src="burrito.jpg" alt="width 100px; height auto; display:block; margin-right: auto;">
+            <p style="font-size: 12px;">Aqui va la primera parte de la pagina del Restaurant, en la que solo muestra el menu sin nada mas</p>
+        
+        </div>
+    </div>
+</body>
+</html>
